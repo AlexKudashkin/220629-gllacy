@@ -1,4 +1,3 @@
-<!-- Теги "span" я использую когда я не знаю как сделать -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,9 +8,14 @@
     <header class="main-menu-panel">
       <div class="container-header">
         <div class="menu-catolog">
+          <div class="logo-a">
+            <a href="/220629-gllacy/main-index.html">
+            <img src="http://placehold.it/154x64" alt="logo">
+            </a>
+          </div>
           <ul>
             <li>
-              <a href="#">Каталог</a>
+              <a href="#" class="active">Каталог</a>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -22,8 +26,10 @@
           </ul>
         </div>
         <div class="user-block">
-          <div class="Magnifier">
-            <img src="http://placehold.it/17x17" alt="Лупа">
+          <div class="Search">
+            <button type="button" name="button">
+              <img src="http://placehold.it/17x17" alt="Поиск">
+            </button>
           </div>
           <div class="login">
             <a href="#">Вход</a>
@@ -33,8 +39,7 @@
           </div>
         </div>
     </header>
-    <main>
-      <div class="main-container">
+    <main class="container">
         <div class="breadcrumbs">
           <ul>
             <li>
@@ -55,18 +60,17 @@
             <form class="select-1-address" action="https://echo.htmlacademy.ru/" method="post">
               <select class="select-1-50" name="ice-cream">
                 <option>по популярности</option>
+                <option>сначала недорогие</option>
+                <option>сначала дорогие</option>
+                <option>по жирности</option>
               </select>
-            </form>
-          </div>
-          <p>Цена: 100 руб. – 500 руб.</p>
-          <div class="range-1">
-            <form class="range-1-address" action="https://echo.htmlacademy.ru/" method="post">
+            </div>
+            <p>Цена: 100 руб. – 500 руб.</p>
+            <div class="range-1">
               <input type="range" name="input-range" id="range-id-1" min="0" max="100" value="50">
-            </form>
-          </div>
-          <p>Жирность:</p>
-          <div class="radio-1">
-            <form class="address-radio-1" action="https://echo.htmlacademy.ru/" method="post">
+            </div>
+            <p>Жирность:</p>
+            <div class="radio-1">
               <input type="radio" name="input-radio" id="radio-id-1" value="">
               <label for="radio-id-1">0%</label>
               <input type="radio" name="input-radio" id="radio-id-2" checked value="">
@@ -75,11 +79,9 @@
               <label for="radio-id-3">до 30%</label>
               <input type="radio" name="input-radio" id="radio-id-4" value="">
               <label for="radio-id-4">выше 30%</label>
-            </form>
-          </div>
-          <p>Наполнители:</p>
-          <div class="checkbox-1">
-            <form class="address-checkbox-1" action="https://echo.htmlacademy.ru/" method="post">
+            </div>
+            <p>Наполнители:</p>
+            <div class="checkbox-1">
               <input type="checkbox" name="fillers-checkbox" id="checkbox-id-1" checked>
               <label for="checkbox-id-1">шоколадные</label>
               <input type="checkbox" name="fillers-checkbox" id="checkbox-id-2" checked>
@@ -90,10 +92,8 @@
               <label for="checkbox-id-4">сиропы</label>
               <input type="checkbox" name="fillers-checkbox" value="checkbox-id-5">
               <label for="checkbox-id-5">джемы</label>
-            </form>
-          </div>
-          <div class="submit-1">
-            <form class="address-submit-1" action="https://echo.htmlacademy.ru/" method="post">
+            </div>
+            <div class="submit-1">
               <input type="submit" name="go-submit" id="submir-id-1" value="Применить">
             </form>
           </div>
@@ -102,105 +102,111 @@
           <div class="ice-cream-1">
             <div class="ice-cream-1-1">
               <img src="http://placehold.it/267x267" alt="ice-cream-1-1">
-              <h2>310 ₽ /кг</h2>
-              <p>Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</p>
+              <span class="price">310 ₽ /кг</span>
+              <p>Сливочное с апельсиновым</p><p>джемом и цитрусовой стружкой</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-1-2">
               <img src="http://placehold.it/267x267" alt="ice-cream-1-2">
-              <h2>325 ₽ /кг</h2>
-              <p>Сливочное с брусничным<br>джемом</p>
+              <span class="price">325 ₽ /кг</span>
+              <p>Сливочное с брусничным</p><p>джемом</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-1-3">
               <img src="http://placehold.it/267x267" alt="ice-cream-1-3">
-              <h2>440 ₽ /кг</h2>
-              <p>Сливочно-ванильное с<br>кусочками шоколада</p>
+              <span class="price">440 ₽ /кг</span>
+              <p>Сливочно-ванильное с</p><p>кусочками шоколада</p>
               <a href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="ice-cream-2">
             <div class="ice-cream-2-1">
               <img src="http://placehold.it/267x267" alt="ice-cream-2-1">
-              <h2>380 ₽ /кг</h2>
-              <p>Сливочно-кофейное с кусочками<br>шоколада</p>
+              <span class="price">380 ₽ /кг</span>
+              <p>Сливочно-кофейное с кусочками</p><p>шоколада</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-2-2">
               <img src="http://placehold.it/267x267" alt="ice-cream-2-2">
-              <h2>410 ₽ /кг</h2>
-              <p>Сливочно-черничное с цельными<br>ягодами черники</p>
+              <span class="price">410 ₽ /кг</span>
+              <p>Сливочно-черничное с цельными</p><p>ягодами черники</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-2-3">
               <img src="http://placehold.it/267x267" alt="ice-cream-2-3">
-              <h2>435 ₽ /кг</h2>
-              <p>Сливочноe с ментоловым<br>сиропом</p>
+              <span class="price">435 ₽ /кг</span>
+              <p>Сливочноe с ментоловым</p><p>сиропом</p>
               <a href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="ice-cream-3">
             <div class="ice-cream-3-1">
               <img src="http://placehold.it/267x267" alt="ice-cream-3-1">
-              <h2>355 ₽ /кг</h2>
-              <p>Сливочно-клубничное с<br>присыпкой из белого шоколада</p>
+              <span class="price">355 ₽ /кг</span>
+              <p>Сливочно-клубничное с</p><p>присыпкой из белого шоколада</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-3-2">
               <img src="http://placehold.it/267x267" alt="ice-cream-3-2">
-                <h2>375 ₽ /кг</h2>
-                <p>Сливочно-лимонное с<br>карамельной присыпкой</p>
+                <span class="price">375 ₽ /кг</span>
+                <p>Сливочно-лимонное с</p><p>карамельной присыпкой</p>
                 <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-3-3">
               <img src="http://placehold.it/267x267" alt="ice-cream-3-3">
-              <h2>355 ₽ /кг</h2>
-              <p>Сливочное с кусочками черного<br>шоколада</p>
+              <span class="price">355 ₽ /кг</span>
+              <p>Сливочное с кусочками черного</p><p>шоколада</p>
               <a href="#">Быстрый просмотр</a>
             </div>
           </div>
           <div class="ice-cream-4">
             <div class="ice-cream-4-1">
               <img src="http://placehold.it/267x267" alt="ice-cream-4-1">
-              <h2>415 ₽ /кг</h2>
-              <p>Сливочное крем-брюле с<br>карамельной подливкой</p>
+              <span class="price">415 ₽ /кг</span>
+              <p>Сливочное крем-брюле с</p><p>карамельной подливкой</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-4-2">
               <img src="http://placehold.it/267x267" alt="ice-cream-4-2">
-              <h2>320 ₽ /кг</h2>
-              <p>Сливочное с шоколадной<br>стружкой</p>
+              <span class="price">320 ₽ /кг</span>
+              <p>Сливочное с шоколадной</p><p>стружкой</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-4-3">
               <img src="http://placehold.it/267x267" alt="ice-cream-4-3">
-              <h2>420 ₽ /кг</h2>
+              <span class="price">420 ₽ /кг</span>
               <p>Сливочное с мятным сиропом</p>
               <a href="#">Быстрый просмотр</a>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="footer-info">
-      <div class="container-footer">
-        <div class="social">
-          <a class="social-btn social-btn-tvit" href="#">Твитер</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <div class="paginator">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
         </div>
-        <div class="section-footer-info">
-          <a href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
+      </main>
+      <footer class="footer-info">
+        <div class="container-footer">
+          <div class="social">
+            <a class="social-btn social-btn-tvit" href="#">Твитер</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </div>
+          <div class="section-footer-info">
+            <a href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
+          <div class="developer">
+            <img src="http://placehold.it/108x38" alt="Лого">
+            <p>Сделано в <a href="https://up.htmlacademy.ru">HTML Academy</a> <sup>©</sup> 2017</p>
+          </div>
         </div>
-        <div class="developer">
-          <img src="http://placehold.it/108x38" alt="Лого">
-          <p>Сделано в <a href="https://up.htmlacademy.ru">HTML Academy</a> <sup>©</sup> 2017</p>
-        </div>
-      </div>
     </footer>
-  </body>
+ </body>
 </html>
