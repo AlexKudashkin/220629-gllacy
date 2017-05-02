@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
-    <link rel="stylesheet" href="/css/gllcy-index.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-menu-panel">
     <div class="menu-catolog">
       <div class="logo-a">
-        <a href="/Users/sasha/Projects/220629-gllacy/main-index.html">
-          <img src="/Users/sasha/Downloads/gllacy/Logo.png" alt="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo">
         </a>
       </div>
       <ul>
         <li>
-          <a href="/Users/sasha/Projects/220629-gllacy/catolog.html">Каталог</a>
+          <a href="catolog.html">Каталог</a>
         </li>
         <li>
           <a href="#">Доставка и оплата</a>
@@ -25,10 +25,12 @@
         </li>
       </ul>
     </div>
+    <div class="search">
+      <button type="button" name="button">
+        <p>Поиск</p>
+      </button>
+    </div>
     <div class="user-block">
-      <div class="Magnifier">
-        <img src="http://placehold.it/17x17" alt="Лупа">
-      </div>
       <div class="login">
         <a href="#">Вход</a>
       </div>
@@ -42,19 +44,21 @@
             <b>С 10 до 20, ежедневно</b>
             <h2>8 812 450-25-25</h2>
           </div>
-          <div class="main-section">
-            <div class="slider-1">
-              <form action="#" method="post">
-                <label for="slide-1" class="slide-1-text slide-off"><h1>Крем-брюле и пломбир с малиновым джемом</h1></label>
-                <label for="slide-2" class="slide-2-text slide-off"><h1>Шоколадный пломбир и лимонный сорбет</h1></label>
-                <label for="slide-3" class="slide-3-text slide-off"><h1>Пломбир с помадкой и клубничный щербет</h1></label>
-                <input type="radio" name="slide-backgound" class="slide-1-radio slide-1-text" id="slide-1" checked>
-                <input type="radio" name="slide-backgound" class="slide-2-radio slide-2-text" id="slide-3">
-                <input type="radio" name="slide-backgound" class="slide-3-radio slide-1-text" id="slide-2">
-              </form>
-            </div>
-            <a href="#">Давайте оба!</a>
+          <!-- спасибо за подсказку -->
+          <input type="radio" name="slider" id="input-slide1" checked>
+          <input type="radio" name="slider" id="input-slide2">
+          <input type="radio" name="slider" id="input-slide3">
+          <div class="slider">
+          	<div class="slide" id="slide1"></div>
+          	<div class="slide" id="slide2"></div>
+          	<div class="slide" id="slide3"></div>
+          	<div>
+          		<label for="input-slide1"></label>
+          		<label for="input-slide2"></label>
+          		<label for="input-slide3"></label>
+          	</div>
           </div>
+          <a href="#">Давайте оба!</a>
           <div class="stock-section">
             <section class="raspberry-free">
               <h2>Малинка даром!</h2>
@@ -69,26 +73,26 @@
           </div>
           <div class="Hits">
             <article class="Hit-ice-cream-1">
-              <img src="http://placehold.it/61x61" alt="Хит">
-              <img src="http://placehold.it/267x267" alt="Хит">
+              <img src="img/hit.jpg" width="61" height="61" alt="Хит">
+              <img src="img/1.jpg" width="267" height="267" alt="Хит-мороженое-1">
               <h2>310₽ ₽ /кг</h2>
               <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </article>
             <article class="Hit-ice-cream-2">
-              <img src="http://placehold.it/61x61" alt="Хит">
-              <img src="http://placehold.it/267x267" alt="Хит">
+              <img src="img/hit.jpg" width="61" height="61" alt="Хит">
+              <img src="img/2.jpg" width="267" height="267" alt="Хит-мороженое-2">
               <h2>380 ₽ /кг</h2>
               <p>Сливочно-кофейное с кусочками шоколада</p>
             </article>
             <article class="Hit-ice-cream-3">
-              <img src="http://placehold.it/61x61" alt="Хит">
-              <img src="http://placehold.it/267x267" alt="Хит">
+              <img src="img/hit.jpg" width="61" height="61" alt="Хит">
+              <img src="img/3.jpg" width="267" height="267" alt="Хит-мороженое-3">
               <h2>355 ₽ /кг</h2>
               <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
             </article>
             <article class="Hit-ice-cream-4">
-              <img src="http://placehold.it/61x61" alt="Хит">
-              <img src="http://placehold.it/267x267" alt="Хит">
+              <img src="img/hit.jpg" width="61" height="61" alt="Хит">
+              <img src="img/4.jpg" width="267" height="267" alt="Хит-мороженое-4">
               <h2>415 ₽ /кг</h2>
               <p>Сливочное крем-брюле с карамельной подливкой</p>
             </article>
@@ -96,13 +100,13 @@
           <div class="info-of-the-corporation">
             <section class="info-of-the-corporation-section">
               <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-              <img src="http://placehold.it/48x49" alt="Мороженко">
+              <img src="img/ice-cream.jpg" width="49" height="49" alt="Мороженко">
               <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-              <img src="http://placehold.it/48x49" alt="Листик">
+              <img src="img/sheet.jpg" width="49" height="49" alt="Листик">
               <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-              <img src="http://placehold.it/48x49" alt="Корова">
+              <img src="img/cow.jpg" width="49" height="49" alt="Корова">
               <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-              <img src="http://placehold.it/48x49" alt="Градусник">
+              <img src="img/thermometer.jpg" width="49" height="49" alt="Градусник">
               <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </section>
             <section class="new-info">
@@ -118,24 +122,27 @@
               </section>
             </div>
             <div class="map">
+              <div class="map-pin">
+                <img src="img/pin.png" width="80" height="140">
+              </div>
               <div class="address">
-              <p>Адрес главного офиса и офлайн магазина:<p>
-              <h4>ул. Большая Конюшенная 19/8, Санкт-Петербург</h4>
-              <p>Для заказов по телефону:</p>
-              <h4>8 812 450-25-25</h4>
-              <p>(с 10 до 20 ежедневно)</p>
-              <div class="a-btn-h3">
-              <form class="" action="index.html" method="post">
-                <input type="button" name="button-2" value="Форма обратной связи">
-              </form>
+                <p>Адрес главного офиса и офлайн магазина:<p>
+                <h4>ул. Большая Конюшенная 19/8, Санкт-Петербург</h4>
+                <p>Для заказов по телефону:</p>
+                <h4>8 812 450-25-25</h4>
+                <p>(с 10 до 20 ежедневно)</p>
+                <div class="a-btn-h3">
+                <form class="" action="index.html" method="post">
+                  <input type="button" name="button-2" value="Форма обратной связи">
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="footer-info">
-      <div class="container-footer">
-        <div class="social">
+      </main>
+      <footer class="footer-info">
+        <div class="container-footer">
+          <div class="social">
           <a class="social-btn social-btn-tvit" href="#">Твитер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -148,7 +155,7 @@
           <a href="#">Экологические стандарты</a>
         </div>
         <div class="developer">
-          <img src="http://placehold.it/108x38" alt="Лого">
+          <img src="img/logo.png" alt="Лого">
           <p>Сделано в <a href="https://up.htmlacademy.ru">HTML Academy</a> <sup>©</sup> 2017</p>
         </div>
       </div>
