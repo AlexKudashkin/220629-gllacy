@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-menu-panel">
     <div class="menu-catolog">
-        <a href="/Users/sasha/Projects/220629-gllacy/main-index.html">
-          <img src="/Users/sasha/Downloads/gllacy/Logo.png" alt="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo">
         </a>
       <ul>
         <li>
@@ -23,10 +24,8 @@
       </ul>
     </div>
     <div class="user-block">
-      <div class="Search">
-        <button type="button" name="button">
-          <img src="http://placehold.it/17x17" alt="Поиск">
-        </button>
+      <div class="search">
+        <button type="button" name="button">Поиск</button>
       </div>
       <div class="login">
         <a href="#">Вход</a>
@@ -34,6 +33,7 @@
       <div class="Basket">
         <span class="Basket-span">2 товара</span>
       </div>
+    </div>
     </header>
     <main class="container">
         <div class="breadcrumbs">
@@ -49,18 +49,16 @@
             </li>
           </ul>
         </div>
-        <div class="search">
+        <div class="search-method">
           <h1>Сливочное мороженое</h1>
           <p>Сортировка:</p>
-          <div class="select-1">
-            <form class="select-1-address" action="https://echo.htmlacademy.ru/" method="post">
-              <select class="select-1-50" name="ice-cream">
-                <option>по популярности</option>
-                <option>сначала недорогие</option>
-                <option>сначала дорогие</option>
-                <option>по жирности</option>
-              </select>
-            </div>
+          <form class="select-1-address" action="https://echo.htmlacademy.ru/" method="post">
+            <select class="select-1-50" name="ice-cream">
+              <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
+            </select>
             <p>Цена: 100 руб. – 500 руб.</p>
             <div class="range-1">
               <input type="range" name="input-range" id="range-id-1" min="0" max="100" value="50">
@@ -77,39 +75,39 @@
               <label for="radio-id-4">выше 30%</label>
             </div>
             <p>Наполнители:</p>
-            <div class="checkbox-1">
+            <div class="checkbox-1">=
               <input type="checkbox" name="fillers-checkbox" id="checkbox-id-1" checked>
               <label for="checkbox-id-1">шоколадные</label>
               <input type="checkbox" name="fillers-checkbox" id="checkbox-id-2" checked>
               <label for="checkbox-id-2">сахарные присыпки</label>
               <input type="checkbox" name="fillers-checkbox" id="checkbox-id-3">
               <label for="checkbox-id-3">фрукты</label>
-              <input type="checkbox" name="fillers-checkbox" value="checkbox-id-4">
+              <input type="checkbox" name="fillers-checkbox" id="checkbox-id-4">
               <label for="checkbox-id-4">сиропы</label>
-              <input type="checkbox" name="fillers-checkbox" value="checkbox-id-5">
+              <input type="checkbox" name="fillers-checkbox" id="checkbox-id-5">
               <label for="checkbox-id-5">джемы</label>
             </div>
             <div class="submit-1">
               <input type="submit" name="go-submit" id="submir-id-1" value="Применить">
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
         <div class="products">
           <div class="ice-cream-1">
             <div class="ice-cream-1-1">
-              <img src="http://placehold.it/267x267" alt="ice-cream-1-1">
+              <img src="img/1.jpg" width="267" height="267" alt="Мороженое-1">
               <span class="price">310 ₽ /кг</span>
               <p>Сливочное с апельсиновым</p><p>джемом и цитрусовой стружкой</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-1-2">
-              <img src="http://placehold.it/267x267" alt="ice-cream-1-2">
+              <img src="img/2.jpg" width="267" height="267" alt="Мороженое-2">
               <span class="price">325 ₽ /кг</span>
               <p>Сливочное с брусничным</p><p>джемом</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-1-3">
-              <img src="http://placehold.it/267x267" alt="ice-cream-1-3">
+              <img src="img/3.jpg" width="267" height="267" alt="Мороженое-3">
               <span class="price">440 ₽ /кг</span>
               <p>Сливочно-ванильное с</p><p>кусочками шоколада</p>
               <a href="#">Быстрый просмотр</a>
@@ -117,19 +115,19 @@
           </div>
           <div class="ice-cream-2">
             <div class="ice-cream-2-1">
-              <img src="http://placehold.it/267x267" alt="ice-cream-2-1">
+              <img src="img/4.jpg" width="267" height="267" alt="Мороженое-4">
               <span class="price">380 ₽ /кг</span>
               <p>Сливочно-кофейное с кусочками</p><p>шоколада</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-2-2">
-              <img src="http://placehold.it/267x267" alt="ice-cream-2-2">
+              <img src="http://placehold.it/267x267" alt="Мороженое-5">
               <span class="price">410 ₽ /кг</span>
               <p>Сливочно-черничное с цельными</p><p>ягодами черники</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-2-3">
-              <img src="http://placehold.it/267x267" alt="ice-cream-2-3">
+              <img src="http://placehold.it/267x267" alt="Мороженое-6">
               <span class="price">435 ₽ /кг</span>
               <p>Сливочноe с ментоловым</p><p>сиропом</p>
               <a href="#">Быстрый просмотр</a>
@@ -137,19 +135,19 @@
           </div>
           <div class="ice-cream-3">
             <div class="ice-cream-3-1">
-              <img src="http://placehold.it/267x267" alt="ice-cream-3-1">
+              <img src="http://placehold.it/267x267" alt="Мороженое-7">
               <span class="price">355 ₽ /кг</span>
               <p>Сливочно-клубничное с</p><p>присыпкой из белого шоколада</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-3-2">
-              <img src="http://placehold.it/267x267" alt="ice-cream-3-2">
+              <img src="http://placehold.it/267x267" alt="Мороженое-8">
                 <span class="price">375 ₽ /кг</span>
                 <p>Сливочно-лимонное с</p><p>карамельной присыпкой</p>
                 <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-3-3">
-              <img src="http://placehold.it/267x267" alt="ice-cream-3-3">
+              <img src="http://placehold.it/267x267" alt="Мороженое-9">
               <span class="price">355 ₽ /кг</span>
               <p>Сливочное с кусочками черного</p><p>шоколада</p>
               <a href="#">Быстрый просмотр</a>
@@ -157,19 +155,19 @@
           </div>
           <div class="ice-cream-4">
             <div class="ice-cream-4-1">
-              <img src="http://placehold.it/267x267" alt="ice-cream-4-1">
+              <img src="http://placehold.it/267x267" alt="Мороженое-10">
               <span class="price">415 ₽ /кг</span>
               <p>Сливочное крем-брюле с</p><p>карамельной подливкой</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-4-2">
-              <img src="http://placehold.it/267x267" alt="ice-cream-4-2">
+              <img src="http://placehold.it/267x267" alt="Мороженое-11">
               <span class="price">320 ₽ /кг</span>
               <p>Сливочное с шоколадной</p><p>стружкой</p>
               <a href="#">Быстрый просмотр</a>
             </div>
             <div class="ice-cream-4-3">
-              <img src="http://placehold.it/267x267" alt="ice-cream-4-3">
+              <img src="http://placehold.it/267x267" alt="Мороженое-12">
               <span class="price">420 ₽ /кг</span>
               <p>Сливочное с мятным сиропом</p>
               <a href="#">Быстрый просмотр</a>
@@ -199,8 +197,8 @@
             <a href="#">Экологические стандарты</a>
           </div>
           <div class="developer">
-            <img src="http://placehold.it/108x38" alt="Лого">
-            <p>Сделано в <a href="https://up.htmlacademy.ru">HTML Academy</a> <sup>©</sup> 2017</p>
+            <img src="img/logo-html-academy.png" alt="Лого-html-academy">
+            <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> <sup>©</sup> 2017</p>
           </div>
         </div>
     </footer>
