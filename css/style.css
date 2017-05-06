@@ -19,3 +19,98 @@ h2 {
   font-weight: bold;
   line-height: 41px;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: red;
+}
+
+.raspberry-free {
+  float: left;
+  width: 560px;
+  height: 230px;
+  background-color: green;
+}
+
+.chocolate-free {
+  float: right;
+  width: 560px;
+  height: 230px;
+  background-color: yellow;
+}
+
+.stock-section {
+    background-color: blue;
+}
+
+.Hit-ice-cream-1 {
+  float: left;
+  width: 267px;
+  height: 324px;
+  background-color: green;
+}
+
+.Hit-ice-cream-2 {
+  float: left;
+  width: 267px;
+  height: 324px;
+  background-color: blue;
+}
+
+.Hit-ice-cream-3 {
+  float: left;
+  width: 267px;
+  height: 324px;
+  background-color: orange;
+}
+
+.Hit-ice-cream-4 {
+  float: left;
+  width: 267px;
+  height: 324px;
+  background-color: red;
+}
+
+/*хит картинку сделать*/
+
+.Hits {
+  background-color: olive;
+  font-size: 16px;
+  min-height: 329px;
+  width: 1146px;
+}
+
+.info-of-the-corporation-section {
+  font-size: 16px;
+  min-height: 309px;
+  width: 1146px;
+  background-color: yellow;
+}
+
+.left-content {
+  float: left;
+  width: 539px;
+  height: 181px;
+  background-color: red;
+}
+
+.right-content {
+  float: right;
+  width: 539px;
+  height: 181px;
+  background-color: blue;
+}
+
+
+
+
+.news-container {
+  width: 1146px;
+  height: 220px;
+}
